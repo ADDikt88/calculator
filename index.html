@@ -7,25 +7,49 @@
     <title>Calculator</title>
 </head>
 <body>
-    <h1>Snowy's Calculator</h1>
-    <p>V 1.01 - Can only add, and no limit to display.
-        - Once you press equal you can no longer enter digits.
-        You must add or clear.
-    </p>
-    <div id="display"></div>
-    <div id="digit-container"></div>
-    <div id="function-container">
-        <button id="add">+</button>
-        <button id="subtract">-</button>
-        <button id="multiply">*</button>
-        <button id="divide">/</button>
+    <header>
+        <h1>Snowy's Calculator</h1>
+        <p>V 1.02 - Some edge cases still need fixing, will add styling in the future
+        </p>
+        <p>Please note there will be overflow errors and the digits will appear outside
+            of the display for long decimals. Will be updated in a future patch.
+        </p>
+    </header>
+    
+    <div id="frame">
+        <div id="display">
+            
+        </div>
+        <div class="row" id="row-1">
+            <button id="clear">Clear</button>
+            <button id="divide">/</button>
+        </div>
+        <div class="row" id="row-2">
+            <button class = "digit" id="7">7</button>
+            <button class = "digit" id="8">8</button>
+            <button class = "digit" id="9">9</button>
+            <button id="multiply">*</button>
+        </div>
+        <div class="row" id="row-3">
+            <button class = "digit" id="4">4</button>
+            <button class = "digit" id="5">5</button>
+            <button class = "digit" id="6">6</button>
+            <button id="subtract">-</button>
+        </div>
+        <div class="row" id="row-4">
+            <button class = "digit" id="1">1</button>
+            <button class = "digit" id="2">2</button>
+            <button class = "digit" id="3">3</button>
+            <button id="add">+</button>
+        </div>
+        <div class="row" id="row-5">
+            <button class="zero digit" id="0">0</button>
+            <button id="decimal">.</button>
+            <button id="equal">=</button>
+        </div>
     </div>
-    <div id="equal-container">
-        <button id="equal">=</button>
-    </div>
-    <div id="equal-container">
-        <button id="clear">Clear</button>
-    </div>
+    
 </body>
+<footer>Kyle Tsang 2024</footer>
 <script src="./calc.js"></script>
 </html>
